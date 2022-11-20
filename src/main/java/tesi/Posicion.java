@@ -54,6 +54,30 @@ public class Posicion {
 			setcolumna((char) posicion.getcolumna());
 		}
 		
+		/*Crea los métodos equals y hashCode para esta clase. Realiza un commit*/
+		@Override
+		public int hashCode() {
+			return Objects.hash(fila, columna);
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			Posicion other = (Posicion) obj;
+			return fila == other.x && y == other.columna;
+		}
+
+		/*@Override
+		public String toString() {
+			return String.format("fila=%s, columna=%s", fila, columna);
+		}
+
+		
 
 		}
 	   
