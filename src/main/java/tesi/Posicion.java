@@ -32,6 +32,20 @@ public class Posicion {
 			}	
 			this.columna = columna;
 		}
+		
+		public Posicion(int fila, char columna) {
+			setfila(fila);
+			setcolumna(columna);
+		}
+
+		public Posicion(Posicion posicion) {
+			if (posicion == null) {
+				throw new NullPointerException("No puedo copiar una posición nula.");
+			}
+			setfila(posicion.getfila());
+			setcolumna((char) posicion.getcolumna());
+		}
+		
 		}
 	   
 	   
