@@ -1,11 +1,15 @@
 package tesi;
 
+import poo.Asignatura;
+
 public class Posicion {
+	  
+	   /* Atributos*/
 	
 	   private int fila;
 	   private char columna;
 	
-	
+	   /* Metodos get y set para los atributos*/
 	   
 	   public int getfila() {
 			return fila;
@@ -33,11 +37,15 @@ public class Posicion {
 			this.columna = columna;
 		}
 		
+		/* Constructor para la clase con los parematros*/
+		
 		public Posicion(int fila, char columna) {
 			setfila(fila);
 			setcolumna(columna);
 		}
 
+		/* Constructor copia*/
+		
 		public Posicion(Posicion posicion) {
 			if (posicion == null) {
 				throw new NullPointerException("No puedo copiar una posición nula.");
@@ -46,6 +54,7 @@ public class Posicion {
 			setcolumna((char) posicion.getcolumna());
 		}
 		
+
 		}
 	   
 	   
