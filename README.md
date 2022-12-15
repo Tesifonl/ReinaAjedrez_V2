@@ -53,7 +53,7 @@ Para ello te pongo un diagrama de clases para el mismo y poco a poco te iré exp
 1. Crea la clase `Reina` cuyos atributos serán un `color` (del tipo enumerado `Color`) y `posicion` (de la clase `Posicion`), con la visibilidad adecuada. Realiza un commit.
 2. Crea los métodos `get` y `set` para cada atributo con la visibilidad adecuada. Los métodos `set` siempre comprobarán la validez de los parámetros pasados y si no son correctos deberá lanzar la excepción adecuada con el mensaje adecuado. Realiza un commit.
 3. Crea un **constructor** por defecto para esta clase que cree una reina blanca en la posición '1d'. Realiza un commit.
-4. Crea un **constructor** para la clase que acepte como parámetro el `color` y que creará una reina de dicho color cuya posición será '1d' si es blanca o '8b' si es negra. Realiza un commit.
+4. Crea un **constructor** para la clase que acepte como parámetro el `color` y que creará una reina de dicho color cuya posición será '1d' si es blanca o '8d' si es negra. Realiza un commit.
 5. Crea el método `mover` que acepte como parámetro una `Direccion` y la cantidad de `pasos` a mover en dicha dirección. Los pasos deben estar comprendidos entre 1 y 7 (ambos inclusive) y la dirección no puede ser nula o de lo contrario debe lanzar una excepción adecuada (`NullPointerException` o `IllegalArgumentException`) con el mensaje adecuado. Si no puede realizar dicho movimiento, debido a que la reina se sale del tablero, se debe lanzar una excepción del tipo OperationNotSupportedException con un mensaje adecuado y no modificará la posición de la reina. Realiza un commit.
 6. Crea el método `toString` que devuelva un `String` que será la representación de dicho objeto (color y posición). Realiza un commit.
 

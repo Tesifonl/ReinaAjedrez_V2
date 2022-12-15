@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
+import tesi.Posicion;
+
 class PosicionTest {
 	
 	private static final String FILA_NO_ESPERADA = "La fila devuelta no es la esperada.";

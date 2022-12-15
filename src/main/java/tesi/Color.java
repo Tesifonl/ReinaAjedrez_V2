@@ -1,6 +1,6 @@
 package tesi;
 
-public enum Color { Blanco ("BLANCO"), Negro ("NEGRO");
+public enum Color { BLANCO ("Blanco"), NEGRO ("Negro");
 	
 	   private String cadenaAMostrar;
 	   

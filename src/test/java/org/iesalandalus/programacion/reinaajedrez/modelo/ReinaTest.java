@@ -9,6 +9,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import tesi.Color;
+import tesi.Direccion;
+import tesi.Posicion;
+import tesi.Reina;
+
 class ReinaTest {
 
 	private static final String COLOR_NO_ESPERADO = "El color no es el esperado.";
